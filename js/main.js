@@ -16,39 +16,37 @@ console.log(contenitore);
 // stampare in console numeri da 1 a 100
 for(let i=1; i<=100; i++){
     // console.log(i);
+    // creo un elemento div
+    let riquadro = document.createElement("div");
+    // Nel contenitore inserisci il DIV sopra
+    contenitore.append(riquadro);
 
     // se la divisione per 3 mi sa resto 0 e anche la divisione per 5 mi da resto 0 -> output: FizzBuzz
     if(i % 3 === 0 && i % 5 === 0){
-        // creo un elemento div
-        let riquadro = document.createElement("div");
+        // aggiungo una classe che permette di personalizzare solo quella casella
+        riquadro.classList.add("fizzbuzz");
         // Nel riquadro (che è il mio DIV) inserisci "FizzBuzz"
         riquadro.append("FizzBuzz");
-        // Nel contenitore inserisci il DIV sopra
-        contenitore.append(riquadro);
+        
         console.log("FizzBuzz");
     } else if (i % 3 === 0){ // altrimenti se solo la divisione per 3 mi da resto 0 -> output: fizz
-        // creo un elemento div
-        let riquadro = document.createElement("div");
+        // aggiungo una classe che permette di personalizzare solo quella casella
+        riquadro.classList.add("fizz");
         // Nel riquadro (che è il mio DIV) inserisci "Fizz"
         riquadro.append("Fizz");
-        // Nel contenitore inserisci il DIV sopra
-        contenitore.append(riquadro);
+        
         console.log("Fizz");
     } else if (i % 5 === 0){ // altrimenti se solo la divisione per 5 mi da resto 0 -> output: buzz
-        // creo un elemento div
-        let riquadro = document.createElement("div");
+        // aggiungo una classe che permette di personalizzare solo quella casella
+        riquadro.classList.add("buzz");
         // Nel riquadro (che è il mio DIV) inserisci "Buzz"
         riquadro.append("Buzz");
-        // Nel contenitore inserisci il DIV sopra
-        contenitore.append(riquadro);
+        
         console.log("Buzz");
     } else { // altrimenti -> output: i (che sarebbe il numero)
-        // creo un elemento div
-        let riquadro = document.createElement("div");
         // Nel riquadro (che è il mio DIV) inserisci "i"
         riquadro.append(i);
-        // Nel contenitore inserisci il DIV sopra
-        contenitore.append(riquadro);
+       
         console.log(i);
     }
 
