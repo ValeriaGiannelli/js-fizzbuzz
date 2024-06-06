@@ -1,5 +1,22 @@
 // Scrivi un programma che stampi in console i numeri da 1 a 100, ma che per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi “Buzz”. Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”.
 
+// creare nel container un elemento div:
+
+// selezione il container e lo metto in una variabile
+const contenitore = document.querySelector(".container");
+console.log(contenitore);
+
+// creo un elemento div
+let riquadro = document.createElement("div");
+console.log(riquadro);
+
+// inserisco l'elemento nel container
+contenitore.append(riquadro);
+
+
+
+
+
 // stampare in console numeri da 1 a 100
 for(let i=1; i<=100; i++){
 
