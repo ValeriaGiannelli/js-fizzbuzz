@@ -17,12 +17,20 @@
     height: 100px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 .fizz{
     background-image: url("../img/fizz");
-    color: #eb00ff;
-    font-size: 24px;
-    font-weight: 700;
+    color: red;
+}
+
+.buzz{
+    background-image: url("../img/buzz.jpg");
+}
+
+.fizzbuzz{
+    background-image: url("../img/fizzbuzzSoda-3826799464.png");
 }
